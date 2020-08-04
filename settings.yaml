@@ -1,0 +1,26 @@
+LicenceKey: <Your Licence Key>
+
+# Select desired exchange platform to trade, { BinanceSpot }
+platform: BinanceSpot
+
+
+publicKey: <Public Api Key>
+secretKey: <Secret Api Key>
+
+# Specify which currency you want to have as your base currency {BTC, USDT}
+baseCurrency: BTC
+
+portfolioManager:
+  # Type how much you want the portfolio worth to be in the base currency
+  desiredPortfolioValue: 0.1
+
+  # Type the name of the coins you want to be in your portfolio, ex; LTC, LINK, XTZ. Only type the name of the coin
+  coinsInPortfolio: 
+  - ETH
+
+  # Define what percentage of your portfolio you want to allocate respectively to each of the coins above. For 10% only type 10. Percentages should add up to 100
+  percentAllocation: 
+  - 100
+  
+  # Select the percentage move frequency for the bot to rebalance your portfolio. This is how often the bot will sell or buy coins to rebalance your portfolio upon such moves in the market. This is in percentage
+  rebalancingFrequencyPercentage: 1
